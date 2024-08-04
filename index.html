@@ -13,50 +13,54 @@
   <body>
     <h1>سنگ، کاغذ، قیچی!</h1>
 
+    <!-- The first container that contains result and options -->
     <section class="container-1">
+      <!-- Results -->
       <div class="result-field">
         <div class="images">
-          <span class="user-result">
-            <img src="images/rock.svg" alt="user-choice" />
+          <span class="player-choice">
+            <img src="images/rock.svg" alt="player-choice" />
           </span>
 
-          <span class="cpu-result">
+          <span class="cpu-choice">
             <img src="images/rock.svg" alt="cpu-choice" />
           </span>
         </div>
 
         <div class="result">
-          <h2>نتیجه</h2>
+          <h2>آماده‌ای؟ 😎</h2>
         </div>
       </div>
 
+      <!-- Options -->
       <div class="options">
-        <span class="option-1">
+        <span class="option">
           <img src="images/rock.svg" alt="rock" />
           <p>سنگ</p>
         </span>
 
-        <span class="option-2">
+        <span class="option">
           <img src="images/paper.svg" alt="paper" />
           <p>کاغذ</p>
         </span>
 
-        <span class="option-3">
+        <span class="option">
           <img src="images/scissors.svg" alt="scissors" />
           <p>قیچی</p>
         </span>
       </div>
     </section>
 
+    <!-- The second container that contains reset button and history -->
     <section class="container-2">
       <button class="reset-btn">شروع مجدد</button>
 
       <span class="history">
         <p><strong>تاریخچه:</strong></p>
-        <p>شما: 0 - 0 :کامپیوتر</p>
+        <p id="#history-text">شما: 0 - 0 :کامپیوتر</p>
       </span>
     </section>
 
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
   </body>
 </html>
