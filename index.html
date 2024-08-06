@@ -4,69 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>بازی سنگ، کاغذ، قیچی</title>
+    <title>انتخاب زبان بازی</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="icon" type="images/x-icon" href="images/favicon.svg" />
   </head>
 
   <body>
-    <!-- Description of how to play the game -->
-    <h1>سنگ، کاغذ، قیچی!</h1>
+    <!-- Choose language -->
+    <div class="container">
+      <p>لطفا زبان خود را انتخاب کنید.</p>
+      <p lang="en" dir="ltr">Please select your language.</p>
 
-    <span class="info-alert">
-      <p>«سنگ»، «کاغذ» یا «قیچی» را انتخاب کنید؛</p>
-      <p>و یا کلید «س»، «ک» یا «ق» را فشار دهید.</p>
-    </span>
-
-    <!-- The first container that contains result and options -->
-    <section class="container-1">
-      <!-- Results -->
-      <div class="result-field">
-        <div class="images">
-          <span class="player-choice">
-            <img src="images/rock.svg" alt="player-choice" />
-          </span>
-
-          <span class="cpu-choice">
-            <img src="images/rock.svg" alt="cpu-choice" />
-          </span>
-        </div>
-
-        <div class="result">
-          <h2>آماده‌ای؟ 😎</h2>
-        </div>
-      </div>
-
-      <!-- Options -->
-      <div class="options">
-        <span class="option">
-          <img src="images/rock.svg" alt="rock" />
-          <p>سنگ</p>
-        </span>
-
-        <span class="option">
-          <img src="images/paper.svg" alt="paper" />
-          <p>کاغذ</p>
-        </span>
-
-        <span class="option">
-          <img src="images/scissors.svg" alt="scissors" />
-          <p>قیچی</p>
-        </span>
-      </div>
-    </section>
-
-    <!-- The second container that contains reset button and history -->
-    <section class="container-2">
-      <button class="reset-btn">شروع مجدد</button>
-
-      <span class="history">
-        <p><strong>تاریخچه:</strong></p>
-        <p id="history-text">شما: 0 - 0 :کامپیوتر</p>
-      </span>
-    </section>
-
-    <script type="module" src="script.js" defer></script>
+      <a href="index-fa.html" class="btn">فارسی</a>
+      <a href="index-en.html" class="btn">English</a>
+    </div>
   </body>
 </html>

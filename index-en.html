@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rock, Paper, Scissors Game</title>
+
+    <link rel="stylesheet" href="style-en.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="images/x-icon" href="images/favicon.svg" />
+  </head>
+
+  <body>
+    <!-- Title, theme and language -->
+    <div class="language-theme">
+      <div>
+        <a href="index-fa.html" class="language" id="persian">فا</a>
+        <a href="index-en.html" class="language deactive" id="english">ENG</a>
+      </div>
+
+      <div>
+        <i class="fa fa-sun-o fa-2x" id="light-icon" aria-hidden="true"></i>
+        <i
+          class="fa fa-moon-o fa-2x deactive"
+          id="dark-icon"
+          aria-hidden="true"
+        ></i>
+      </div>
+    </div>
+
+    <h1>Rock, Paper, Scissors!</h1>
+
+    <!-- The description of how to play the game -->
+    <span class="info-alert">
+      <p>Choose 'Rock' 'Paper' or 'Scissors'</p>
+      <p>or press the 'R' 'P' or 'S' key.</p>
+    </span>
+
+    <!-- The first container that contains result and options -->
+    <section class="container-1">
+      <!-- Results -->
+      <div class="result-field">
+        <div class="images">
+          <div id="player-container">
+            <p><strong>You</strong></p>
+            <span class="player-choice">
+              <img src="images/rock.svg" alt="player-choice" />
+            </span>
+          </div>
+
+          <div id="cpu-container">
+            <p><strong>CPU</strong></p>
+            <span class="cpu-choice">
+              <img src="images/rock.svg" alt="cpu-choice" />
+            </span>
+          </div>
+        </div>
+
+        <div class="result">
+          <h2>Ready? 😎</h2>
+        </div>
+      </div>
+
+      <!-- Options -->
+      <div class="options">
+        <span class="option">
+          <img src="images/rock.svg" alt="rock" />
+          <p>Rock</p>
+        </span>
+
+        <span class="option">
+          <img src="images/paper.svg" alt="paper" />
+          <p>Paper</p>
+        </span>
+
+        <span class="option">
+          <img src="images/scissors.svg" alt="scissors" />
+          <p>Scissors</p>
+        </span>
+      </div>
+    </section>
+
+    <!-- The second container that contains reset button and history -->
+    <section class="container-2">
+      <button class="reset-btn">Reset</button>
+
+      <span class="history">
+        <p><strong>History:</strong></p>
+        <p id="history-text">You: 0 - 0 :CPU</p>
+      </span>
+    </section>
+
+    <script type="module" src="script-en.js" defer></script>
+  </body>
+</html>

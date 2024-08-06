@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>بازی سنگ، کاغذ، قیچی</title>
+
+    <link rel="stylesheet" href="style-fa.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="images/x-icon" href="images/favicon.svg" />
+  </head>
+
+  <body>
+    <!-- Title, theme and language -->
+    <div class="language-theme">
+      <div>
+        <a href="index-fa.html" class="language deactive">فا</a>
+        <a href="index-en.html" class="language">ENG</a>
+      </div>
+
+      <div>
+        <i
+          class="fa fa-sun-o fa-2x deactive"
+          id="light-icon"
+          aria-hidden="true"
+        ></i>
+        <i class="fa fa-moon-o fa-2x" id="dark-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <h1>سنگ، کاغذ، قیچی!</h1>
+
+    <!-- The description of how to play the game -->
+    <span class="info-alert">
+      <p>«سنگ»، «کاغذ» یا «قیچی» را انتخاب کنید؛</p>
+      <p>و یا کلید «س»، «ک» یا «ق» را فشار دهید.</p>
+    </span>
+
+    <!-- The first container that contains result and options -->
+    <section class="container-1">
+      <!-- Results -->
+      <div class="result-field">
+        <div class="images">
+          <div id="player-container">
+            <p><strong>شما</strong></p>
+            <span class="player-choice">
+              <img src="images/rock.svg" alt="player-choice" />
+            </span>
+          </div>
+
+          <div id="cpu-container">
+            <p><strong>کامپیوتر</strong></p>
+            <span class="cpu-choice">
+              <img src="images/rock.svg" alt="cpu-choice" />
+            </span>
+          </div>
+        </div>
+
+        <div class="result">
+          <h2>آماده‌ای؟ 😎</h2>
+        </div>
+      </div>
+
+      <!-- Options -->
+      <div class="options">
+        <span class="option">
+          <img src="images/rock.svg" alt="rock" />
+          <p>سنگ</p>
+        </span>
+
+        <span class="option">
+          <img src="images/paper.svg" alt="paper" />
+          <p>کاغذ</p>
+        </span>
+
+        <span class="option">
+          <img src="images/scissors.svg" alt="scissors" />
+          <p>قیچی</p>
+        </span>
+      </div>
+    </section>
+
+    <!-- The second container that contains reset button and history -->
+    <section class="container-2">
+      <button class="reset-btn">شروع مجدد</button>
+
+      <span class="history">
+        <p><strong>تاریخچه:</strong></p>
+        <p id="history-text">شما: 0 - 0 :کامپیوتر</p>
+      </span>
+    </section>
+
+    <script type="module" src="script-fa.js" defer></script>
+  </body>
+</html>
