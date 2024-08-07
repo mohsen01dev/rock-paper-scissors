@@ -71,6 +71,7 @@ body {
 }
 
 h1 {
+  text-align: center;
   font-family: "IRANYekanX-Bold";
   font-size: 2.5rem;
   margin-bottom: 25px;
@@ -274,4 +275,32 @@ a {
 
 .history p {
   padding: 6px;
+}
+
+@media (width <= 480px) {
+  body {
+    padding: 0;
+  }
+
+  .language-theme {
+    padding: 20px 10px;
+  }
+
+  .container-1 {
+    border-radius: 0;
+  }
+
+  .container-2 {
+    border-radius: 0;
+  }
+}
+
+@media (width <= 360px) {
+  .container-2 {
+    flex-direction: column;
+  }
+
+  .reset-btn {
+    margin-bottom: 20px;
+  }
 }
